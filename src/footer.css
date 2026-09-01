@@ -1,0 +1,11 @@
+.site-footer{padding:52px 5vw;display:grid;grid-template-columns:1fr minmax(320px,1.25fr) auto;align-items:center;gap:5vw;border-top:1px solid #e1e6e2;background:#fbfcfa}
+.footer-brand>p{font-size:11px;color:#64756e;margin:14px 0 0}
+.engine-link{display:grid;grid-template-columns:1fr auto;gap:6px 25px;padding:20px 22px;border:1px solid #d7ddd8;color:var(--ink);text-decoration:none;transition:background .25s ease,border-color .25s ease}
+.engine-link:hover{background:#edf5f0;border-color:#b7cabf}
+.engine-link>span{grid-column:1/-1;font-size:9px;font-weight:600;letter-spacing:.18em;color:#668078}
+.engine-link>strong{font:400 22px var(--serif)}
+.engine-link>strong svg{width:15px;vertical-align:middle;margin-left:5px;transition:transform .25s ease}
+.engine-link:hover>strong svg{transform:translateX(3px)}
+.engine-link>small{grid-column:1/-1;font-size:11px;line-height:1.5;color:#64756e}
+.footer-meta{font-size:11px;line-height:1.65;text-align:right;color:#64756e;margin:0;white-space:nowrap}
+@media(max-width:850px){.site-footer{grid-template-columns:1fr;align-items:start;gap:28px}.engine-link{width:100%;max-width:560px}.footer-meta{text-align:left}}

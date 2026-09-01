@@ -3,6 +3,7 @@ import{createRoot}from'react-dom/client';
 import{ArrowRight,Check,ChevronRight,HeartHandshake,Menu,ShieldCheck,Sparkles,Stethoscope,X}from'lucide-react';
 import'./style.css';
 import'./build.css';
+import'./footer.css';
 
 const steps=['Your needs','Foot details','Review'];
 
@@ -47,6 +48,6 @@ function App(){
   <section className="clinician" id="clinicians"><div className="icon"><Stethoscope/></div><p className="eyebrow">FOR CLINICIANS & PRACTICES</p><h2>A responsive fabrication partner.</h2><p>Bring us the clinical objective. We help translate it into a reviewable prototype while keeping communication direct and the workflow easy to follow.</p><button className="light" onClick={()=>setOpen(true)}>Start a clinician request<ArrowRight/></button></section>
   <section className="founder"><HeartHandshake/><blockquote>“I know what it feels like when a foot problem becomes the center of your life. OpenFootLab is built to make the next step clearer, more personal, and more useful.”</blockquote><p>DONOVAN MACKEY <span>Founder · Type 1 diabetic</span></p></section>
   <section className="final"><p className="eyebrow">READY WHEN YOU ARE</p><h2>Let’s start with your foot.</h2><button className="primary" onClick={()=>setOpen(true)}>Start your foot profile<ArrowRight/></button><p>Questions? <a href="mailto:care@openfootlab.com">care@openfootlab.com</a> · <a href="tel:15615327120">561.532.7120</a></p></section>
- </main><footer><div className="brand"><span className="mark">OF</span><span>OPENFOOTLAB</span></div><p>Personalized foot support, built with care.</p><p>© 2026 OpenFootLab · Jupiter, Florida</p></footer>{open&&<Intake close={()=>setOpen(false)}/>}</>
+ </main><footer className="site-footer"><div className="footer-brand"><div className="brand"><span className="mark">OF</span><span>OPENFOOTLAB</span></div><p>Personalized foot support, built with care.</p></div><a className="engine-link" href="https://opendiabetic.com/" target="_blank" rel="noopener noreferrer"><span>BUILD ENGINE</span><strong>OpenDiabetic <ArrowRight/></strong><small>Daily foot intelligence → personalized design → made-to-fit manufacturing.</small></a><p className="footer-meta">© 2026 OpenFootLab<br/>Jupiter, Florida</p></footer>{open&&<Intake close={()=>setOpen(false)}/>}</>
 }
 createRoot(document.getElementById('root')).render(<App/>);
