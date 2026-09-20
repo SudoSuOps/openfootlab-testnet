@@ -1,12 +1,13 @@
 import React,{useState} from 'react';
 import{createRoot}from'react-dom/client';
-import{ArrowRight,Building2,Check,ChevronRight,HeartHandshake,MapPin,Menu,Route,ShieldCheck,Sparkles,Stethoscope,X}from'lucide-react';
+import{ArrowRight,Building2,Check,ChevronRight,Download,HeartHandshake,MapPin,Menu,Route,ShieldCheck,Sparkles,Stethoscope,X}from'lucide-react';
 import'./style.css';
 import'./build.css';
 import'./footer.css';
 import'./local.css';
 import'./profile.css';
 import'./field-notes.css';
+import'./brochure.css';
 import'./brand.css';
 import'./responsive.css';
 
@@ -31,7 +32,7 @@ function Intake({close}){
 
 function App(){
  const[open,setOpen]=useState(false),[nav,setNav]=useState(false);
- return <><header><a className="brand" href="#"><img className="flo-logo" src="/brand/footlabos-flo-mark-lime.svg" alt="FLO"/><span>OPENFOOTLAB<small>LOCAL FOOT SUPPORT + MANUFACTURING</small></span></a><nav className={nav?'show':''}><a href="#profile">15-Day Profile</a><a href="#service">Local service</a><a href="#footlabos">FootLabOS</a><a href="#field-notes">Field Notes</a><a href="#clinicians">For clinicians</a></nav><button className="navcta" onClick={()=>setOpen(true)}>Start with FLO</button><button className="menu" onClick={()=>setNav(!nav)} aria-label="Toggle navigation">{nav?<X/>:<Menu/>}</button></header>
+ return <><header><a className="brand" href="#"><img className="flo-logo" src="/brand/footlabos-flo-mark-lime.svg" alt="FLO"/><span>OPENFOOTLAB<small>LOCAL FOOT SUPPORT + MANUFACTURING</small></span></a><nav className={nav?'show':''}><a href="#profile">15-Day Profile</a><a href="#service">Local service</a><a href="#footlabos">FootLabOS</a><a href="#brochure">Brochure</a><a href="#field-notes">Field Notes</a><a href="#clinicians">For clinicians</a></nav><button className="navcta" onClick={()=>setOpen(true)}>Start with FLO</button><button className="menu" onClick={()=>setNav(!nav)} aria-label="Toggle navigation">{nav?<X/>:<Menu/>}</button></header>
  <main>
   <section className="hero"><div className="hero-copy"><p className="eyebrow"><span></span>FLO · OPENFOOTLAB · JUPITER, FLORIDA</p><h1>Local support for <em>feet at risk.</em></h1><p className="lead">Meet FLO—the simple front door to OpenFootLab. Start with a no-charge 15-Day Foot Profile, then connect that living baseline to local fit visits, personalized inserts and human follow-through through FootLabOS.</p><div className="hero-actions"><button className="primary" onClick={()=>setOpen(true)}>Start the 15-Day Profile<ArrowRight/></button><a href="#profile">See how FLO works</a></div><div className="trust"><span><Check/>No app required</span><span><Check/>No card required</span><span><Check/>Human follow-through</span></div></div>
   <div className="hero-visual"><div className="orbit one"></div><div className="orbit two"></div><div className="insole"><div className="mesh"></div><span>01</span></div><div className="float-card"><Sparkles/><div><b>Designed around you</b><small>Not pulled from a shelf.</small></div></div></div></section>
@@ -76,6 +77,10 @@ function App(){
    </div>
   </section>
   <section className="care" id="care"><div className="care-photo"><div className="rings"></div><span>MADE WITH PURPOSE</span></div><div><p className="eyebrow">WHAT WE MAKE</p><h2>Thoughtful support for real feet.</h2><p>We develop personalized foot-support products and prototypes with attention to fit, pressure, materials and the person who will use them.</p><ul><li><Check/>Personalized inserts</li><li><Check/>Toe fillers and accommodations</li><li><Check/>Clinician-directed prototypes</li><li><Check/>Rapid design refinement</li></ul><p className="fine">OpenFootLab products are not a substitute for diagnosis, emergency care, or treatment by a licensed medical professional.</p></div></section>
+  <section className="brochure-section" id="brochure">
+   <a className="brochure-cover" href="/brochure/" aria-label="View the FLO OpenFootLab clinical brochure"><img src="/images/flo-clinical-brochure-cover.webp" alt="Cover of the FLO OpenFootLab clinical brochure" loading="lazy"/></a>
+   <div className="brochure-copy"><p className="eyebrow">FLO / CLINICAL BROCHURE</p><h2>The complete pathway.<br/>Ready to share.</h2><p>See how FLO connects the 15-Day Foot Profile, precision capture, individual geometry, local fabrication and human follow-through in one concise clinical handout.</p><ul><li><Check/>Built for clients, families and care teams</li><li><Check/>Four-page high-resolution PDF</li><li><Check/>Clear scope and clinical boundaries</li></ul><div className="brochure-actions"><a className="primary" href="/brochure/">Explore the brochure<ArrowRight/></a><a className="brochure-download" href="/resources/FLO-OpenFootLab-Clinical-Brochure.pdf" download>Download PDF<Download/></a></div></div>
+  </section>
   <section className="clinician" id="clinicians"><div className="icon"><Stethoscope/></div><p className="eyebrow">FOR PODIATRISTS, CLINICIANS & PRACTICES</p><h2>Your local manufacturing and continuity partner.</h2><p>We can meet at the practice, capture the approved manufacturing inputs, build locally, coordinate delivery and preserve the feedback loop through FootLabOS. The licensed care team remains in control of diagnosis, treatment and clinical decisions.</p><div className="clinician-actions"><button className="light" onClick={()=>setOpen(true)}>Start a practice conversation<ArrowRight/></button><a href="mailto:flo@openfootlab.com?subject=OpenFootLab%20practice%20partnership">flo@openfootlab.com</a></div></section>
   <section className="field-notes" id="field-notes">
    <div className="field-notes-head"><div><p className="eyebrow">FLO FIELD NOTES / MESSAGING INTELLIGENCE</p><h2>Small reads.<br/>Real signals. Your edge.</h2></div><div><p>FLO Field Notes turns verified research, lived experience and the signals of daily life into short, useful guidance built around the person—not the platform.</p><strong>No noise. No technology lesson. Intelligence you can use.</strong></div></div>
@@ -88,6 +93,6 @@ function App(){
   </section>
   <section className="founder"><HeartHandshake/><blockquote>“I know what it feels like when a foot problem becomes the center of your life. OpenFootLab is built to make the next step clearer, more personal, and more useful.”</blockquote><p>DONOVAN MACKEY <span>Founder · Type 1 diabetic</span></p></section>
   <section className="final"><p className="eyebrow">START WITH FLO</p><h2>Build your Foot Profile first.</h2><button className="primary" onClick={()=>setOpen(true)}>Start the 15-Day Profile<ArrowRight/></button><p>Jupiter, FL · By appointment<br/><a href="mailto:flo@openfootlab.com">flo@openfootlab.com</a> · <a href="tel:15615327120">561.532.7120</a></p></section>
- </main><footer className="site-footer"><div className="footer-brand"><div className="brand"><img className="flo-logo" src="/brand/footlabos-flo-mark-lime.svg" alt="FLO"/><span>OPENFOOTLAB</span></div><p>Local foot support and personalized manufacturing.</p></div><a className="engine-link" href="https://footlabos.com/" target="_blank" rel="noopener noreferrer"><span>POWERED BY</span><strong>FootLabOS <ArrowRight/></strong><small>FLO check-ins → Flight Sheets → personalized design → local manufacturing.</small></a><p className="footer-meta">© 2026 OpenFootLab<br/>Jupiter, FL · By appointment<br/>Palm Beach + Martin counties</p></footer>{open&&<Intake close={()=>setOpen(false)}/>}</>
+ </main><footer className="site-footer"><div className="footer-brand"><div className="brand"><img className="flo-logo" src="/brand/footlabos-flo-mark-lime.svg" alt="FLO"/><span>OPENFOOTLAB</span></div><p>Local foot support and personalized manufacturing.</p><a className="footer-brochure" href="/brochure/">View the clinical brochure <ArrowRight/></a></div><a className="engine-link" href="https://footlabos.com/" target="_blank" rel="noopener noreferrer"><span>POWERED BY</span><strong>FootLabOS <ArrowRight/></strong><small>FLO check-ins → Flight Sheets → personalized design → local manufacturing.</small></a><p className="footer-meta">© 2026 OpenFootLab<br/>Jupiter, FL · By appointment<br/>Palm Beach + Martin counties</p></footer>{open&&<Intake close={()=>setOpen(false)}/>}</>
 }
 createRoot(document.getElementById('root')).render(<App/>);
