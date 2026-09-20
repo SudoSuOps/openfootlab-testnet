@@ -1,6 +1,6 @@
 # OpenFootLab Testnet
 
-The public OpenFootLab landing site for the Jupiter office and mobile service across Palm Beach and Martin counties. It includes client and practice pathways, a FootLabOS/FLO overview, personalized manufacturing details, and a three-step contact flow.
+The public OpenFootLab landing site for the Jupiter office and mobile service across Palm Beach and Martin counties. It includes the no-charge 15-Day FLO Foot Profile Builder, client and practice pathways, a FootLabOS/FLO overview, personalized manufacturing details, and a three-step contact flow.
 
 ## Run locally
 
