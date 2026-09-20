@@ -1,0 +1,13 @@
+# OpenFootLab
+
+OpenFootLab is a Jupiter, Florida-based foot technology and personalized manufacturing partner serving Palm Beach and Martin counties.
+
+- Official website: https://openfootlab.com/
+- Operating system: https://footlabos.com/
+- Messaging intelligence: FLO Field Notes at https://footlabos.com/field-notes/
+- Start: no-charge 15-Day FLO Foot Profile Builder with no card or automatic billing.
+- Services: local fit visits, personalized inserts, toe fillers and accommodations, clinician-directed prototypes, and connected follow-through.
+- Location: Jupiter, Florida; service and fittings by appointment.
+- Contact: flo@openfootlab.com | 561-532-7120
+- Important: OpenFootLab products and services do not replace diagnosis, emergency care, or treatment by a licensed medical professional.
+- Brand architecture: FLO is the client-facing guide; OpenFootLab is the local office and manufacturer; FootLabOS is the operating system and continuity protocol.
